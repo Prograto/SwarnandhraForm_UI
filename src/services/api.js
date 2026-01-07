@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://swarnandhraforms-backend.onrender.com/api",
 });
 
 /* ✅ Attach token to every request */
@@ -29,3 +29,4 @@ api.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+
